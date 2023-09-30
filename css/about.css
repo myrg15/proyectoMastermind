@@ -13,24 +13,78 @@ body{
     font-family: 'Gloria Hallelujah', cursive;
     /*font-family: 'Mystery Quest', cursive;*/
 }
-#buttonPlay{
-    border-radius: 50em;
-    background:black;
-    width:8em;
+.formulary-about{
+color:aliceblue
+}
+
+.formulary-header{
+    font-family: 'Gloria Hallelujah', cursive;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    width:40em;
+    border: 1px solid transparent;
+    font-size:xx-large;
+    border-radius: 0.5em;   
+    background: green;
+    line-height: 2em;
+}
+.card-body{
+border-radius: 1em;
+background: red;
+
+}
+
+.title-mastermind{
+
+
+}
+
+.text-description{
+
+
+}
+
+.container-text-centerplay{
+
+
+}
+.row-play{
+
+
+}
+
+.col-md-3-ms-md-autoplay{
+    border-radius: 20em;
+    width:em;
     height:2.5em;
     text-align:center;
-    margin: 10px;
-    padding: 25px;
+    margin: 20em;
+    padding: 3.5em;
     color: aliceblue;
     font-family: 'Gloria Hallelujah', cursive;
     cursor: pointer;
     background: green;
+
 }
-#buttonHome{    
+
+
+.containe-text-centerhome{
+
+
+}
+
+.row-home{
+
+
+}
+
+
+.col-md-3-ms-md-autohome{
     border-radius: 50em;
-    background:black;
-    width:8em;
-    height:2.5em;
+    background:green;
+    width:50em;
+    height:3.5em;
     text-align:center;
     margin: 10px;
     padding: 25px;
@@ -38,4 +92,6 @@ body{
     font-family: 'Gloria Hallelujah', cursive;
     cursor: pointer;
     text-decoration: none;
+
+
 }
