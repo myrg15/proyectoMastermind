@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mystery+Quest&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 0vh;
+    width: 0vw;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*position: absolute;*/
+    background-image: url('/imag/fondos-abstractos-hd-4k.webp');
+    font-family: 'Gloria Hallelujah', cursive;
+    /*font-family: 'Mystery Quest', cursive;*/
+}
+.container-text{
+    font-family: 'Gloria Hallelujah', cursive;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    width: 50em;
+}
+.text-one{
+    border: 1px solid transparent;
+    font-size:xx-large;   
+    /*padding: 10px;
+    margin: 10px;*/
+    color: aliceblue;
+    font-family: 'Gloria Hallelujah', cursive;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    width: 50em;
+    /*top:8em;*/
+    line-height: 10em;  
+}
+
+#buttonPlay{
+    border-radius: 50em;
+    background:black;
+    width:8em;
+    height:2.5em;
+    text-align:center;
+    margin: 10px;
+    padding: 25px;
+    color: aliceblue;
+    font-family: 'Gloria Hallelujah', cursive;
+    cursor: pointer;
+}
+
+#buttonAbout{    
+    border-radius: 50em;
+    background:black;
+    width:8em;
+    height:2.5em;
+    text-align:center;
+    margin: 10px;
+    padding: 25px;
+    color: aliceblue;
+    font-family: 'Gloria Hallelujah', cursive;
+    cursor: pointer;
+    text-decoration: none;
+}
