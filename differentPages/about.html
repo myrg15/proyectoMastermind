@@ -6,90 +6,37 @@
     <title>ABOUT</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <div class="formulary-about">
-        <div class="formulary-header">How to play Master Mind?</div>
-    <div class="card-body">
-        <div class="title-mastermind">Master Mind</div>
-        <div class="text-description">Logic game can be played by two people. It helps to develop certain skills in 
-        the logical-mathematical area. 
+    <div class="screen-main-about" id="container">
+        <div class="row-title-about">
+            <div class="title-mastermind">HOW TO PLAY MASTERMIND?</div>
         </div>
-        <br>
-        <div class="title-objective">Objective</div>
-        <div class="text-description-decipher">Decipher the color code
-            Ruling out possibilities according to clues provided by the opponent
+        <div class="row-definition">
+            <div class="title-about">MASTERMIND</div>
+            <div class="definition-about">Logic game can be played by two people. It helps to develop certain skills in 
+                the logical-mathematical area.</div>
         </div>
-        <br>
-        <div class="step-1">Step 1: Choose the code</div>
-        <div class="text-description-step1">The coder will create a four-piece code. You can create any combination of colors,
-        even repeating the same color several times. 
-        </div>
-        <br>
-        <div class="step-2">First attempt at decoding</div>
-        <div class="text-description-step2">Four pieces should be placed in the first row. This is the one furthest away from the space where the code is placed. The coder must give clues to the decoder. To do so, it will place a white piece for each piece in the correct place and a red or black piece for each piece in the place and color indicated.
-         In this example, the yellow piece is in the correct place so a red piece is placed. All the other pieces are incorrect so the space is left blank.
-        </div>
-        <br>
-        <div class="step-3">Use the clues</div>
-        <div class="text-description-step3">The decoder will use the hint to change his move. The information he has at hand is that one 
-            of the pieces is placed correctly so he must try to determine which one it is. The best way is to change one piece at a time. In the example the white piece was swapped for a pink piece so now the coder must give new clues. In this case there are two pieces in place and of the correct color: the yellow and the pink.
-        </div>
-        <br>
-        <div class="step-4">Eliminating possibilities</div>
-        <div class="text-description-step4">In this case the decoder decides to put the pieces back in their previous position and change one of the other pieces. It already knows that the pink piece is correct because when it placed it in this position it received a red piece.
-            By making this change again it gets two red pieces so this means that the green piece is not in the code.
-        </div>
-        <br>
-        <div class="step-5">Step 5: Decoding the code</div>
-        <div class="text-description-step5">Now the decoder decides to move the yellow piece and add a white piece. The result is that it again loses a red piece. 
-            This means that the yellow piece was in the right place and there are no white pieces in the code. 
-        </div>
-        <br>
-        <div class="step-6">Step 6: Decoded code</div>
-        <div class="text-description-step6">By now the decoder has tried all possible colors and none have added white pieces indicating that they are in the code. 
-            He decides to change the two pieces to the same color, the result is that he gets four red pieces. This is indicative that the pattern has been deciphered. This is the end of the game.
-        </div>
-        <br>
-        <div class="scores-winner">Scores and winner</div>
-        <div class="text-description-scores-winner">The coder gets the number of points corresponding to each row the decoder used. In this case he gets 6 points. 
-            When all the games agreed upon at the start of the game are played, the scores are added up and the player with the highest number wins.
-        </div>
-        <br>
-        <div class="incorrect clue">Incorrect clue</div>
-        <div class="text-description-clue">If when reviewing the plays it is determined that the coder gave incorrect clues 3 points will be awarded to the decoder. 
-        </div>
-        <br>
-        <div class="code-not-found">Code not found</div>
-        <div class="text-description-not-found">If all ten rows are used without finding the correct code the game is over and the coder gets 10 points for each row and an additional bonus point.
-        </div>
-        <br>
-        <div class="addtional-challenge"> Additional challenge</div>
-        <div class="text-description-challenge">If you want to add a challenge you can leave empty space in the code. The empty space works as an additional color so the possible combinations increase.  
-        </div>
-        <br>
-    </div>
-
-    <div class="container-text-centerplay" id="buttonPlay">
-        <div class="row-play">
-        <div class="col-md-3-ms-md-autoplay" id="buttonPlay">PLAY</div>
-        </div>
-    </div>
-
-    <div class="containe-text-centerhome" id="buttonHome">
+        <div class="row-rule">
+            <div class="title-rule">RULE</div>
+            <div class="description-rule">*You will select a series of colors. You will have to create combinations
+                 with these colors and try to guess the secret sequence.</div>
+            <div class="description-rule-2">*You will be able to choose a different number of colors and you will have from ten to six attempts to solve the game. 
+                    Good luck!</div>
+        </div> 
+        <div class="separador-rule">separador</div>
         <div class="row-home">
-        <a href="/index.html" class="col-md-3-ms-md-autohome" id="buttonHome">HOME</a>
+            <a class="title-home" href="./index.html">HOME</a>
         </div>
-    </div>
+        <div class="separador-home">separador</div>
+        <div class="row-next">
+            <a class="title-next" href="" >NEXT</a> <!--RECODAR ENLAZAR CON LA PAGINA DE JUGADOR-->
+        </div>
+    </div><!--cierre contenedor principal-->
+    
 
-    <!-- <div class="buttons" id="buttonsPlayHome">
-            <div class="row justify-content-between">
-                <div class="col-md-3 offset-md-3" id="buttonPlay">PLAY</div>
-                <a href="/index.html" class="col-md-3 offset-md-3" id="buttonHome">HOME</a>
-                <a FALTA href PARA EL BOTON PLAY</a>
-            </div>-->
-
+    
     <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
