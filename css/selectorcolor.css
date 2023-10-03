@@ -1,221 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mystery+Quest&display=swap');
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@media only screen and (max-width: 990px) {
+    html {
+      font-size: 0.7em;
+    }
 }
 body{
     margin: 0;
     padding: 0;
-    height: 0vh;
-    width: 0vw;
-    display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*position: absolute;*/
     background-image: url('/imag/fondos-abstractos-hd-4k.webp');
     font-family: 'Gloria Hallelujah', cursive;
-    /*font-family: 'Mystery Quest', cursive;*/
+    /*background-size: cover;*/
 }
-
-/*.circle-cp{
-    border-radius: 50%;
-    border: solid black 0.2em;
-    height: 2em;
-    width: 2em;
-    margin: 0.5em;
-    /*justify-content: center;*/
-    justify-content: space-around;
-
-}
-
-/*input[type="color"] {
-    width: 2em;
-    height: 2em;
-    border: solid 0.2em black;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-.container{
-    font-family: 'Gloria Hallelujah', cursive;
-    /*justify-content: center;*/
-    justify-content: space-around;
-    align-items:center;
-    text-align:center;
-    width:50em;
-    
-}*/
-
-/*#buttonPlay{
-    border-radius: 50em;
-    background:black;
-    width:8em;
-    height:2.5em;
-    text-align:center;
-    margin: 10px;
-    padding: 25px;
-    color: aliceblue;
-    font-family: 'Gloria Hallelujah', cursive;
-    cursor: pointer;
-}
-#buttonAbout{    
-    border-radius: 50em;
-    background:black;
-    width:8em;
-    height:2.5em;
-    text-align:center;
-    margin: 10px;
-    padding: 25px;
-    color: aliceblue;
-    font-family: 'Gloria Hallelujah', cursive;
-    cursor: pointer;
-    text-decoration: none;
-}*/
-
-.circle-card {
+.screen-select-colors{
+    text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 0;
-    padding-bottom: 100%;
-    position: relative;
 }
-.circle-card .card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
+.row-select-colors{
+    margin-top: 1.5em;
+    font-size: 4em;
+    color:white;
 }
-.card {
-    background-color: white;
-    font-family: monospace;
-    color: black;
-}
-.btn {
-    background-color: black;
-    font-family: monospace;
-
-}
-.btn-form{
-    width: 15em;
-}
-
-
-/* ABOUT */
-.buttons-about {
+.container-circle{
     display: flex;
+    justify-content: space-between;
     justify-content: center;
-    align-items: center;
-    background-color: white;
-    margin: 1em;
-    font-family: monospace;
-    width: 15em;
-    height: 5em;
-    color: black;
+    color:black;
+    margin-top: 3em;
+    padding: 3em 30em 2em 30em;
 }
-
-
-/*LEVEL*/
-.btn-player {
-    width: 10em;
+.shape-circle0, .shape-circle1, .shape-circle2, .shape-circle3{
+    background: white;
+    font-family: 'Times New Roman', Times, serif;    
+    font-size: 30px;
+    color:transparent;
+    width: 70px;
+    height: 60px;
+    border-radius: 45%;
+    text-align: center;
+    line-height: 60px;
 }
-/*color picker*/
-.btn-cp, .nivelFacil, .nivelInter, .nivelDif {
-    width: 10em;
-}
-input[type="color"] {
-    width: 2em;
-    height: 2em;
-    border: solid 0.2em black;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-.circle-cp{
-    border-radius: 50%;
-    border: solid black 0.2em;
-    height: 2em;
-    width: 2em;
-    margin: 0.5em;
-}
-.btn-comenzar {
-    width: 10em;
-}
-
-
-/*LEVEL*/
-.card-level {
+.container-square{
     display: flex;
+    justify-content: space-between;
     justify-content: center;
+    color:black;
+    margin-top: 1.5em;
+    padding: 3em 30em 2em 30em;
+    background-color: transparent; /* Color inicial para los cuadrados */
+    /*border: 2px solid #000;*/
 }
 
-
-/*TABLE*/
-.tablero {
-    background-color: white;
-    border-radius: 1em;
-    padding: 1em;
-    width: 20em;
+.shape-square0, .shape-square1, .shape-square2, .shape-square3 {
+    background: white;
+    font-family: 'Times New Roman', Times, serif;    
+    font-size: 30px;
+    color:transparent;
+    width: 70px;
+    height: 60px;
+    border-radius: 5%;
+    text-align: center;
+    line-height: 60px;
 }
-.userColors {
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50%;
-    /* border: solid black 0.15em; */
-    margin: 0.5em;
-}
-.secret {
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    border: solid black;
-    margin: 0.5em;
+#colorPicker {
     display: none;
 }
-
-.secretLine {
-    border: solid black 0.1em;
-    border-radius: 1em;
-    display: none;
-}
-/*ROW*/
-.line {
-    border: solid black 0.1em;
-    border-radius: 1em;
-}
-.dot1 {
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    border: solid black;
-    margin: 0.2em;
-}
-.dotA {
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    border: solid black;
-    margin: 0.2em;
-}
-
-.rowprincipal {
-    margin-left: 0.02em;
-    margin-bottom: 0.5em;
-}
-
-/*BUTTON CHECK*/
-.dot {
-    height: 3em;
-    width: 3em;
-}
-.check {
-    height: 3em;
-    width: 3em;
-}
-.answer {
-    width: 4em;
-}
-img {
+.button-container {
+    margin-top: 25px;
     cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;    
+    font-size: 30px;
+}
+button:hover{
+    background-color: #0056b3;
 }
