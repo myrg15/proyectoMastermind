@@ -110,7 +110,7 @@ font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
     color:transparent;
 }
-            /*STYLE PLAYER*/
+            /*STYLE LOGIN*/
 .row-title-player{
     margin-top: 2em;
     font-size: 3.5em;
@@ -125,7 +125,6 @@ font-family: 'Times New Roman', Times, serif;
     color:white;
     font-family: 'Times New Roman', Times, serif;
 }
-            /*PLAYER*/
 .form-player {
 padding: 30px;
 border:1px solid #ccc;
