@@ -11,40 +11,6 @@ body{
     font-family: 'Gloria Hallelujah', cursive;
     /*background-size: cover;*/
 }
-.screen-select-colors{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.row-select-colors{
-    margin-top: 1.5em;
-    font-size: 4em;
-    color:white;
-}
-/*.circle{
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    color:black;
-    margin-top: 3em;
-    padding: 3em 30em 2em 30em;
-}
-.shape-circle0, .shape-circle1, .shape-circle2, .shape-circle3{
-    /*background: white;*/
-    font-family: 'Times New Roman', Times, serif;    
-    font-size: 30px;
-    color:transparent;
-    width: 70px;
-    height: 60px;
-    border-radius: 45%;
-    text-align: center;
-    line-height: 60px;
-}*/
-.shape-circle0, .shape-circle1, .shape-circle2, .shape-circle3{
-background-color: #ff5733;
-}
 .square{
     display: flex;
     justify-content: space-between;
@@ -55,7 +21,6 @@ background-color: #ff5733;
     background-color: transparent; /* Color inicial para los cuadrados */
     /*border: 2px solid #000;*/
 }
-
 .shape-square0, .shape-square1, .shape-square2, .shape-square3 {
     background: white;
     font-family: 'Times New Roman', Timegs, serif;    
@@ -78,9 +43,10 @@ border-collapse: collapse;
     padding: 5px;
 }
 #colorPicker {
-    /*display: none;*/
+    display: none;
     opacity: 0;
     width: 0;
+    background: red;
 }
 .button-container {
     margin-top: 25px;
@@ -91,4 +57,23 @@ border-collapse: collapse;
 /* START GAME*/
 .separador{
     color:transparent;
+}
+.circle{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    color:black;
+    margin-top: 3em;
+    padding: 3em 30em 2em 30em;
+}
+.shape-circle0, .shape-circle1, .shape-circle2, .shape-circle3{
+    /*background: white;*/
+    font-family: 'Times New Roman', Times, serif;    
+    font-size: 30px;
+    color:transparent;
+    width: 70px;
+    height: 60px;
+    border-radius: 45%;
+    text-align: center;
+    line-height: 60px;
 }
