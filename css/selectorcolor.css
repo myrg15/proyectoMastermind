@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mystery+Quest&display=swap');
 @media only screen and (max-width: 990px) {
-    html {
+    
+html {
       font-size: 0.7em;
-    }
+}
+
 }
 body{
     margin: 0;
@@ -23,27 +25,8 @@ body{
     font-size: 4em;
     color:white;
 }
-/*.circle{
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    color:black;
-    margin-top: 3em;
-    padding: 3em 30em 2em 30em;
-}
-.shape-circle0, .shape-circle1, .shape-circle2, .shape-circle3{
-    /*background: white;*/
-    font-family: 'Times New Roman', Times, serif;    
-    font-size: 30px;
-    color:transparent;
-    width: 70px;
-    height: 60px;
-    border-radius: 45%;
-    text-align: center;
-    line-height: 60px;
-}*/
-.shape-circle0, .shape-circle1, .shape-circle2, .shape-circle3{
-background-color: #ff5733;
+.title-select-colors{
+
 }
 .square{
     display: flex;
@@ -52,12 +35,8 @@ background-color: #ff5733;
     color:black;
     margin-top: 8em;
     padding: 3em 30em 2em 30em;
-    background-color: transparent; /* Color inicial para los cuadrados */
-    /*border: 2px solid #000;*/
 }
-
-.shape-square0, .shape-square1, .shape-square2, .shape-square3 {
-    background: white;
+.shape-square1, .shape-square2, .shape-square3, .shape-square4{
     font-family: 'Times New Roman', Timegs, serif;    
     font-size: 30px;
     color:transparent;
@@ -66,12 +45,67 @@ background-color: #ff5733;
     border-radius: 5%;
     text-align: center;
     line-height: 60px;
-}
-.shape-square0, .shape-square1, .shape-square2, .shape-square3 {
     background-color:#3366ff;
 }
+.palette-container{
+    position: relative;
+    background-color: rgb(0, 0, 0, 0);
+    display: flex;
+    width: 30.5rem;
+    height: 10rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.05rem;
+    /*border-style: solid;*/
+    /*border-color: white;*/
+    transform: translate(0, 0rem);
+}
+
+.picker-palette{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 6rem;
+    height: 4rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.05rem;
+    border-style: solid;
+    border-color: white;
+    transform: translate(0, 0rem);
+}
+
+.color-select-style {
+    background-color: unset;
+    width: 2rem;
+    height: 2rem;
+    border-style: dotted;
+    border-color: white;
+    cursor: pointer;
+}
+.palette {
+    font-weight: 200;
+    position: relative;
+    font-size: small;
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    border: 0.05rem;
+    border-style: dashed;
+    border-color: white;
+    transform: translate(0, 0rem);
+}
+
+
 #rgb-table{
 border-collapse: collapse;
+background: green;
+width: 20em;
+height: 20em;
 }
 #rgb-table{
     border: 1px solid #000;
@@ -83,10 +117,11 @@ border-collapse: collapse;
     width: 0;
 }
 .button-container {
-    margin-top: 25px;
+    margin-top: 20px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;    
     font-size: 30px;
+
 }
 /* START GAME*/
 .separador{

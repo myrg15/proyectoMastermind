@@ -10,9 +10,9 @@ const username = document.getElementById('username');
 let selectedShapeSquare = 0;
 const shapeSquares = document.querySelectorAll('.shape-square');
 
-//chooseButton.addEventListener('click', () => {
-//    colorPicker.click();
-//});
+chooseButton.addEventListener('click', () => {
+    colorPicker.click();
+});
 
 //shapeSquares.forEach((elem,i)=>{
   //  elem.addEventListener('click',()=>{

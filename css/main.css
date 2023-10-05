@@ -110,6 +110,7 @@ font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
     color:transparent;
 }
+
             /*STYLE LOGIN*/
 .row-title-player{
     margin-top: 2em;
@@ -141,14 +142,14 @@ font-size: 30px;
     display:block;
     margin-bottom: 10px;
 }
-input[type="text"],input[type="password"]{
+#username{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-button{
+#start{
     background-color: white;
     color: black;
     padding: 10px 20px;
@@ -156,7 +157,14 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
-button:hover{
+#home{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#start, #home:hover{
     background-color: #0056b3;
 }
-

@@ -13,35 +13,44 @@
         <div class="row-select-colors">
         <div class="title-select-colors">Select your colors</div>
     </div>
-    <!--<form id="color-form">
-        <div class="circle">
-            <div class="shape-circle0"></div>
-            <div>se</div>
-            <div class="shape-circle1"></div>
-            <div>se</div>
-            <div class="shape-circle2"></div>
-            <div>se</div>
-            <div class="shape-circle3"></div>
-        </div>-->
         <div class="square">    
-            <div class="shape-square0 shape-square"></div>
+            <div class="shape-square1" id="palette1"></div>
             <div>se</div>
-            <div class="shape-square1 shape-square"></div>
+            <div class="shape-square2" id="palette2"></div>
             <div>se</div>
-            <div class="shape-square2 shape-square"></div>
+            <div class="shape-square3" id="palette3"></div>
             <div>se</div>
-            <div class="shape-square3 shape-square"></div>
+            <div class="shape-square4" id="palette4"></div>
             <div>se</div>
         </div>
 
-        <table class="rgb-table">
-        </table>
+        <div class="palette-container">
+            <div class="picker-palette">
+                <input type="color" class="color-select-style" name="" id="colorSelect1">
+                <!--<div class="palette" id="palette1"></div>-->
+            </div>
+            <div class="picker-palette">
+                <input type="color" class="color-select-style" name="" id="colorSelect2">
+                <!--<div class="palette" id="palette2"></div>-->
+            </div>
+            <div class="picker-palette">
+                <input type="color" class="color-select-style" name="" id="colorSelect3">
+                <!--<div class="palette" id="palette3"></div>-->
+            </div>
+            <div class="picker-palette">
+                <input type="color" class="color-select-style" name="" id="colorSelect4">
+                <!--<div class="palette" id="palette4"></div>-->
+            </div>
+        </div>
+
+        <!--<table class="rgb-table">
+        </table>-->
 
         <div class="button-container">
-            <input type="color" id="colorPicker">
-            <button type="button" id="chooseButton">Choose</button>
-            <button type="button" id="starButton"><a href="/differentPages/startGame.html">Star</a></button>
-            <button type="button" id="homeButton"><a href="/index.html">Home</a></button>
+            <!--<input type="color" id="colorPicker">-->
+            <!--<button type="button" id="chooseButton">Choose</button>-->
+            <button class="button" id="play"><a href="/differentPages/startGame.html">Star</a></button>
+            <button class="button" id="reset"><a href="/differentPages/login.html">Home</a></button>
         </div>
     </form>
 
