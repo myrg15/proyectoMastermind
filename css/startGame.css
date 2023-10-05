@@ -55,18 +55,21 @@ body{
     /*margin-top: em;*/
     padding: 3em 30em 2em 30em;
 }
-.shape-circle0, .shape-circle1, .shape-circle2, .shape-circle3{
+.shape-circle0, .shape-circle1, .shape-circle2, .shape-circle3, .shape-circle4, .shape-circle5 {
     /*background: white;*/
-    font-family: 'Times New Roman', Times, serif;    
-    font-size: 30px;
-    color:transparent;
+    /*font-family: 'Times New Roman', Times, serif;*/    
+    /*font-size: 30px;*/
+    /*color:transparent;*/
     width: 70px;
     height: 60px;
     border-radius: 45%;
     text-align: center;
     line-height: 60px;
 }
-.shape-circle0, .shape-circle1, .shape-circle2, .shape-circle3{
+/*.shape-circle4, .shape-circle5{
+    
+}*/
+.shape-circle0, .shape-circle1, .shape-circle2, .shape-circle3, .shape-circle4, .shape-circle5{
 background: violet;
 }
 .circle-small{
