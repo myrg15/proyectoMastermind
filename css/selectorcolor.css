@@ -25,27 +25,23 @@ body{
     font-size: 4em;
     color:white;
 }
-.title-select-colors{
-
-}
 .square{
     display: flex;
     justify-content: space-between;
     justify-content: center;
-    color:black;
-    margin-top: 8em;
+    color:transparent;
+    margin-top: 2em;
     padding: 3em 30em 2em 30em;
 }
-.shape-square1, .shape-square2, .shape-square3, .shape-square4{
-    font-family: 'Times New Roman', Timegs, serif;    
-    font-size: 30px;
-    color:transparent;
+#palette1, #palette2, #palette3, #palette4{
+   /* font-family: 'Times New Roman', Timegs, serif;*/    
+    /*font-size: 30px;*/
+    /*color:transparent;*/
     width: 70px;
     height: 60px;
     border-radius: 5%;
-    text-align: center;
+    /*text-align: center;*/
     line-height: 60px;
-    background-color:#3366ff;
 }
 .palette-container{
     position: relative;
@@ -64,10 +60,10 @@ body{
 
 .picker-palette{
     position: relative;
-    background-color: rgb(0, 0, 0);
+    /*background-color: rgb(0, 0, 0);*/
     display: flex;
-    width: 6rem;
-    height: 4rem;
+    width: 10rem;
+    height: 10rem;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -75,15 +71,17 @@ body{
     border-style: solid;
     border-color: white;
     transform: translate(0, 0rem);
+    padding: 2rem;
 }
 
 .color-select-style {
     background-color: unset;
-    width: 2rem;
-    height: 2rem;
-    border-style: dotted;
+    width: 6rem;
+    height: 12em;
+    border-style:double;
     border-color: white;
     cursor: pointer;
+
 }
 .palette {
     font-weight: 200;
@@ -99,31 +97,36 @@ body{
     border-color: white;
     transform: translate(0, 0rem);
 }
-
-
-#rgb-table{
+/*#rgb-table{
 border-collapse: collapse;
-background: green;
 width: 20em;
 height: 20em;
-}
-#rgb-table{
+}*/
+/*#rgb-table{
     border: 1px solid #000;
     padding: 5px;
-}
+}*/
+
 #colorPicker {
     /*display: none;*/
     opacity: 0;
     width: 0;
+    background: green;
 }
 .button-container {
     margin-top: 20px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;    
-    font-size: 30px;
-
+    font-size: 30px;   
 }
-/* START GAME*/
+.button-play{
+    text-decoration: none;
+    color: black;
+}
+.button-reset{
+    text-decoration: none;
+    color: black;
+}
 .separador{
     color:transparent;
 }
