@@ -16,34 +16,27 @@ colorSelect1.addEventListener('input', () => {
     palette1.style.backgroundColor = colorSelect1.value;
     if (selectedColor[0] === undefined || selectedColor[0] === selectedColor[0]) {
         selectedColor.splice(0, 1, colorSelect1.value);
-    //} else {
-      //  selectedColor.splice(0, 1, colorSelect1.value); se repite esta linea de codigo en todos no le veo sentido
     }
 })
 colorSelect2.addEventListener('input', () => {
     palette2.style.backgroundColor = colorSelect2.value;
     if (selectedColor[1] === undefined || selectedColor[1] === selectedColor[0]) {
         selectedColor.splice(1, 1, colorSelect2.value);
-    //} else {
-      //  selectedColor.splice(1, 1, colorSelect2.value);
     }
 })
 colorSelect3.addEventListener('input', () => {
     palette3.style.backgroundColor = colorSelect3.value;
     if (selectedColor[2] === undefined || selectedColor[2] === selectedColor[0]) {
         selectedColor.splice(2, 1, colorSelect3.value);
-    //} else {
-      //  selectedColor.splice(2, 1, colorSelect3.value);
     }
 })
 colorSelect4.addEventListener('input', () => {
     palette4.style.backgroundColor = colorSelect4.value;
     if (selectedColor[3] === undefined || selectedColor[3] === selectedColor[0]) {
         selectedColor.splice(3, 1, colorSelect4.value);
-    //} else {
-      //  selectedColor.splice(3, 1, colorSelect4.value);
     }
 })
+//reset limpia lo input regresando color blanco
 reset.addEventListener('click', () => {
     selectedColor = [];
     palette1.style.backgroundColor = "#ffffff";
@@ -54,7 +47,7 @@ reset.addEventListener('click', () => {
     colorSelect2.value = "#ffffff";
     colorSelect3.value = "#ffffff";
     colorSelect4.value = "#ffffff";
-    console.log(selectedColor);/*aqui tenia como parametro selectPalette*/
+    console.log(selectedColor);
 })
 play.addEventListener('click', () => {
     localStorage.setItem('selectedColor', selectedColor);

@@ -1,9 +1,9 @@
 const selectedColorsLocal = localStorage.getItem('selectedColor');
 const selectedColors = selectedColorsLocal.split(",");
-const estado0 = document.getElementById("estado0");
-const estado1 = document.getElementById("estado1");
-const estado2 = document.getElementById("estado2");
-const estado3 = document.getElementById("estado3");
+const status0 = document.getElementById("status0");
+const status1 = document.getElementById("status1");
+const status2 = document.getElementById("status2");
+const status3 = document.getElementById("status3");
 
 const colorSelect1 = document.getElementById('colorSelect1')
 const palette1 = document.getElementById('palette1')
@@ -67,7 +67,7 @@ colorSelect4.addEventListener('input', () => {
          } 
         }) */
                                                        
-function comprobarEstado(idColorSelect, colorAComprobar){
+function comprobarEstado(idColorSelect, colorAComprobar){ // con el idColorSelect hacemos referencia al id del input? y con coloraComprobar al que selecciona el jugador
 console.log(idColorSelect); 
 console.log(colorAComprobar);
 
@@ -75,36 +75,33 @@ if(selectedColors[idColorSelect] === colorAComprobar){
     // el estado de idColorSelect lo ponemos en verde
     switch(idColorSelect){
         case 0:
-            estado0.style.backgroundColor = "green"
+            status0.style.backgroundColor = "green"
         break; 
         case 1:
-            estado1.style.backgroundColor = "green"
+            status1.style.backgroundColor = "green"
         break; 
         case 2:
-            estado2.style.backgroundColor = "green"
+            status2.style.backgroundColor = "green"
         break; 
         case 3:
-            estado3.style.backgroundColor = "green"
+            status3.style.backgroundColor = "green"
         break;    
-    
     }
 } else {
-    // el estado el estado de idColorSelect lo ponemos en rojo
-
+    // el estado de idColorSelect lo ponemos en rojo
     switch(idColorSelect){
         case 0:
-            estado0.style.backgroundColor = "red"
+            status0.style.backgroundColor = "red"
         break; 
         case 1:
-            estado1.style.backgroundColor = "red"
+            status1.style.backgroundColor = "red"
         break; 
         case 2:
-            estado2.style.backgroundColor = "red"
+            status2.style.backgroundColor = "red"
         break; 
         case 3:
-            estado3.style.backgroundColor = "red"
+            status3.style.backgroundColor = "red"
         break;    
-    
     }
 }
 };

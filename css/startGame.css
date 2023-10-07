@@ -13,7 +13,6 @@ body {
     font-family: 'Gloria Hallelujah', cursive;
     /*background-size: cover;*/
 }
-
 .screen-select-colors {
     text-align: center;
     display: flex;
@@ -27,7 +26,6 @@ body {
     font-size: 4em;
     color: white;
 }
-
 .square {
     display: flex;
     justify-content: space-between;
@@ -39,7 +37,6 @@ body {
     /* Color inicial para los cuadrados */
     /*border: 2px solid #000;*/
 }
-
 .shape-square1,
 .shape-square2,
 .shape-square3,
@@ -54,19 +51,9 @@ body {
     text-align: center;
     line-height: 60px;
 }
-
-/*.shape-square1,
-.shape-square2,
-.shape-square3,
-.shape-square4 {
-    background-color: #3366ff;*/
-}
-
 #newGame {
     padding: 1em 0em 0.1em 0.em;
-
 }
-
 .button-container {
     margin-top: 25px;
     cursor: pointer;
@@ -88,7 +75,6 @@ body {
     margin-top: 3em;
     padding: 3em 30em 2em 30em;
 }
-
 #palette1,
 #palette2,
 #palette3,
@@ -102,7 +88,6 @@ body {
     /*text-align: center;*/
     line-height: 60px;
 }
-
 .palette-container {
     position: relative;
     background-color: rgb(0, 0, 0, 0);
@@ -176,17 +161,35 @@ body {
     color: black;
 }
 
-.separador {
+.separador{
     color: transparent;
 }
-
-
-#logicaComprobacionColores{
+.track{
     display: flex;
-    gap: 2px;
+    gap: 4px;
+    flex-direction: row;
 }
-#logicaComprobacionColores div{
+.track div{
     background-color: white;
     width: 20px;
     height: 20px;
+    float: right;
+    position:relative
 }
+.between-divisor{
+    position: relative;
+    display: flex;
+    width: 7rem;
+    height: 10rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.05rem;
+    border-color:transparent;
+    padding: 2rem; 
+}
+.divisor{
+    background-color: transparent;
+    color: transparent;
+}
+
