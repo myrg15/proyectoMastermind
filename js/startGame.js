@@ -1,5 +1,5 @@
-const selectedColorsLOCAL = localStorage.getItem('selectedColor');
-const selectedColors = selectedColorsLOCAL.split(",");
+const selectedColorsLocal = localStorage.getItem('selectedColor');
+const selectedColors = selectedColorsLocal.split(",");
 const estado0 = document.getElementById("estado0");
 const estado1 = document.getElementById("estado1");
 const estado2 = document.getElementById("estado2");
@@ -56,9 +56,19 @@ colorSelect4.addEventListener('input', () => {
         comprobarEstado(3, colorSelect3.value)
     }
 })
+//comprobar el array ganador con la opción de colores que ha elegido el jugador
+//es decir comparar los arrays para saber si ha ganado en el primer intento
+//si no ha ganado se habilita la segunda fila para continuar con los intentos
 
+//comparando array del localstore    pregunta: como puedo probar si el codigo esta bien por medio de la consola?
+/* const compaArrays = (selectedColorsLocal, selectedColor => {
+        if (selectedColorsLocal[0].length !== selectedColor[0].length) {//debo poner el indicador de [0]en cada array?
+            return false;
+         } 
+        }) */
+                                                       
 function comprobarEstado(idColorSelect, colorAComprobar){
-console.log(idColorSelect);
+console.log(idColorSelect); 
 console.log(colorAComprobar);
 
 if(selectedColors[idColorSelect] === colorAComprobar){
@@ -97,4 +107,16 @@ if(selectedColors[idColorSelect] === colorAComprobar){
     
     }
 }
-}
+};
+
+/* FLECHA */
+/* const comprobarEstadoFlecha = (idColorSelect, colorAComprobar) => {
+    const color = selectedColor[idColorSelect === colorAComprobar ?  'green' : 'ren'];
+    const states = [estado0, estado1, estado2, estado3];
+    if(states[idColorSelect]){
+        states[idColorSelect].style.backgroundColor = color;
+    }
+} */
+
+
+//recordar poner el mensaje al final de los intentos, felicidades haz ganado
