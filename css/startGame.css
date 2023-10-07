@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mystery+Quest&display=swap');
-
-@media only screen and (max-width: 990px) {
+/*@media only screen and (max-width: 990px) {
     html {
-        font-size: 0.7em;
+      font-size: 0.7em;
     }
-}
-
+  }
+  
+  @media only screen and (max-width: 750px) {
+    html {
+      font-size: 0.5em;
+    }
+  }
+  
+  @media only screen and (max-width: 680px) {
+    html {
+      font-size: 0.33em;
+    }
+  }*/
+  
 body {
     margin: 0;
     padding: 0;
@@ -23,92 +34,72 @@ body {
 
 .row-select-colors {
     margin-top: 0.5em;
-    font-size: 4em;
+    font-size: 3em;
     color: white;
+    width: 5em;
+    height: 0.3em;
 }
 .square {
     display: flex;
     justify-content: space-between;
     justify-content: center;
-    color: black;
-    /*margin-top: em;*/
-    padding: 3em 30em 2em 30em;
+    color:white ;
+    padding: 8em 1.5em 1em 0.2em;
     background-color: transparent;
-    /* Color inicial para los cuadrados */
-    /*border: 2px solid #000;*/
+    gap:1.5em;
+    height: 1em;
 }
-.shape-square1,
+/*.shape-square1,
 .shape-square2,
 .shape-square3,
 .shape-square4 {
-    /*background: white;*/
-    font-family: 'Times New Roman', Timegs, serif;
-    font-size: 30px;
-    color: transparent;
     width: 70px;
     height: 60px;
-    border-radius: 5%;
-    text-align: center;
-    line-height: 60px;
-}
+}*/
 #newGame {
+    margin-top: 2.5em;
     padding: 1em 0em 0.1em 0.em;
+    font-size: 0.7em;
+    border-radius: 0.3em;
 }
-.button-container {
+/*.button-container {
     margin-top: 25px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
-}
-
-/* START GAME*/
-.separador {
+}*/
+/*.separador {
     color: transparent;
-}
+}*/
 
-/*CICLES SMALL*/
-.circle-small {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    color: black;
-    margin-top: 3em;
-    padding: 3em 30em 2em 30em;
-}
 #palette1,
 #palette2,
 #palette3,
 #palette4 {
-    /* font-family: 'Times New Roman', Timegs, serif;*/
-    /*font-size: 30px;*/
-    /*color:transparent;*/
-    width: 70px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 5%;
-    /*text-align: center;*/
     line-height: 60px;
 }
 .palette-container {
     position: relative;
     background-color: rgb(0, 0, 0, 0);
     display: flex;
-    width: 30.5rem;
+    width: 30rem;
     height: 10rem;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     border: 0.05rem;
-    /*border-style: solid;*/
-    /*border-color: white;*/
     transform: translate(0, 0rem);
+    gap: 8px;
 }
-
-.picker-palette {
+/*.picker-palette {
     position: relative;
     /*background-color: rgb(0, 0, 0);*/
     display: flex;
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6.5rem;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -116,8 +107,8 @@ body {
     border-style: solid;
     border-color: white;
     transform: translate(0, 0rem);
-    padding: 2rem;
-}
+    padding: 1.5rem;
+}*/
 
 .color-select-style {
     background-color: unset;
@@ -161,22 +152,23 @@ body {
     color: black;
 }
 
-.separador{
+/*.separador{
     color: transparent;
-}
+}*/
 .track{
     display: flex;
     gap: 4px;
     flex-direction: row;
 }
 .track div{
+    border-radius: 20px;
     background-color: white;
     width: 20px;
     height: 20px;
     float: right;
-    position:relative
+    position:relative;
 }
-.between-divisor{
+/*.between-divisor{
     position: relative;
     display: flex;
     width: 7rem;
@@ -187,9 +179,17 @@ body {
     border: 0.05rem;
     border-color:transparent;
     padding: 2rem; 
+}*/
+/*.button-check{
+    font-size: 1.1em;
+}*/
+#check{
+    border-radius: 0.3em;   
 }
-.divisor{
-    background-color: transparent;
-    color: transparent;
+.winning-message{
+    margin-top: 2.5em;
+    font-size: 1.5em;
+    background: white;
+    border-radius: 0.4em;
+    width: 15em;
 }
-
