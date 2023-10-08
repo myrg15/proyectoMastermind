@@ -37,10 +37,12 @@ body {
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
 }
-.title-play-index{
+
+.title-play-index {
     text-decoration: none;
-    color:black;
+    color: black;
 }
+
 .separador {
     background: transparent;
     font-size: 3em;

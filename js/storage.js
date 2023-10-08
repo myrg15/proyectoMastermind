@@ -10,6 +10,30 @@ const reset = document.getElementById('reset')
 const play = document.getElementById('play')
 let selectedColor = [];
 
+function gwtRandomHexColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random()*16)];     
+    }
+
+    return color;
+}
+
+function generateRandomCOlorsArray(numColors){
+    const colors = [];
+
+    for (let i = 0; i < numColors; i++) {
+       colors.push(gwtRandomHexColor());   
+    }
+
+    return colors;
+}
+coloresAutogenerados = generateRandomCOlorsArray(4);
+/* console.log("LA MAQUINA A CREADO:" + coloresAutogenerados); */
+localStorage.setItem('coloresGeneradosMaquina', coloresAutogenerados);
+
 // PALETA DE COLORES
 colorSelect1.addEventListener('input', () => {
     //console.log('Valor de colorSelect1:', colorSelect1.value); para comprobar que va imprimiendo
