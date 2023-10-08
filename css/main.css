@@ -1,63 +1,205 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mystery+Quest&display=swap');
 
-body{
+@media only screen and (max-width: 990px) {
+    html {
+        font-size: 0.7em;
+    }
+}
+
+body {
     margin: 0;
     padding: 0;
-    height: 0vh;
-    width: 0vw;
-    display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*position: absolute;*/
     background-image: url('/imag/fondos-abstractos-hd-4k.webp');
     font-family: 'Gloria Hallelujah', cursive;
-    /*font-family: 'Mystery Quest', cursive;*/
-}
-.container-text{
-    font-family: 'Gloria Hallelujah', cursive;
-    justify-content: center;
-    align-items:center;
-    text-align:center;
-    width: 50em;
-}
-.text-one{
-    border: 1px solid transparent;
-    font-size:xx-large;   
-    /*padding: 10px;
-    margin: 10px;*/
-    color: aliceblue;
-    font-family: 'Gloria Hallelujah', cursive;
-    justify-content: center;
-    align-items:center;
-    text-align:center;
-    width: 50em;
-    /*top:8em;*/
-    line-height: 10em;  
+    background-size: cover;
 }
 
-#buttonPlay{
-    border-radius: 50em;
-    background:black;
-    width:8em;
-    height:2.5em;
-    text-align:center;
-    margin: 10px;
-    padding: 25px;
-    color: aliceblue;
-    font-family: 'Gloria Hallelujah', cursive;
-    cursor: pointer;
+.screen-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#buttonAbout{    
-    border-radius: 50em;
-    background:black;
-    width:8em;
-    height:2.5em;
-    text-align:center;
-    margin: 10px;
-    padding: 25px;
-    color: aliceblue;
-    font-family: 'Gloria Hallelujah', cursive;
+.row-title {
+    margin-top: 2em;
+    font-size: 4em;
+    color: white;
+}
+
+.row-play {
+    margin-top: 6em;
+    font-size: 2.5em;
+    background: white;
+    border-radius: 0.2em;
+    width: 3.6em;
     cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title-play-index {
     text-decoration: none;
+    color: black;
+}
+
+.separador {
+    background: transparent;
+    font-size: 3em;
+    color: transparent;
+}
+
+.title-about-index {
+    margin-top: 8em;
+    font-size: 2.5em;
+    background: white;
+    border-radius: 0.2em;
+    width: 4em;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*STYLE ABOUT*/
+.screen-main-about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-title-about {
+    margin-top: 1em;
+    font-size: 2.5em;
+    color: white;
+}
+
+.definition-about,
+.description-rule,
+.description-rule-2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.row-definition {
+    margin-top: 2.5em;
+    font-size: 1.5em;
+    background: white;
+    border-radius: 0.2em;
+    width: 50em;
+}
+
+.row-rule {
+    margin-top: 2.5em;
+    font-size: 1.5em;
+    background: white;
+    border-radius: 0.2em;
+    width: 50em;
+}
+
+.title-home {
+    margin-top: 8em;
+    font-size: 2em;
+    background: white;
+    border-radius: 0.2em;
+    width: 4em;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.separador-rule {
+    background: transparent;
+    font-size: 3em;
+    color: transparent;
+}
+
+.title-next {
+    margin-top: 8em;
+    font-size: 2em;
+    background: white;
+    border-radius: 0.2em;
+    width: 4em;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.separador-home {
+    background: transparent;
+    font-size: 1.5em;
+    color: transparent;
+}
+
+/*STYLE LOGIN*/
+.row-title-player {
+    margin-top: 2em;
+    font-size: 3.5em;
+    color: white;
+}
+
+.input-player {
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    /*background:white;*/
+    border-radius: 0.2em;
+    width: 50em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-player {
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 30px;
+}
+
+.h2 {
+    font-size: 40px;
+}
+
+.labels {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#username {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#start {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start:hover {
+    background-color: #0056b3;
+}
+
+#home:hover {
+    background: #0056b3;
 }
