@@ -1,4 +1,4 @@
-![Thinking](emojiPensando.png)
+![Alt text](emojiPensando.png)
 
 ## Project 3  MASTERMIND
 
@@ -22,14 +22,19 @@ which indicate red clues if you do not have your colours in the correct position
 Once the combination is finally found, the system will send a congratulatory message.
 
 ## Home
+![Home](home.JPG)
 
 ## About
+![About](about.JPG)
 
 ## Login
+![Login](login.JPG)
 
 ## Select colors
+![Selectcolors](selectcolors.JPG)
 
 ## Start game
+![Startgame](stargame.JPG)
 
 ## Improvements
 From this experience, I will include new modules of different levels to the game, and I will improve the already included level, punctually in the colours of the cards that give clues to the player for black and white, since to go with just time for the delivery of the project I did not make change of bottom of the screens the colour does not favour any element that contains black colour, among other improvements that I consider at the moment of the development.
@@ -38,4 +43,4 @@ From this experience, I will include new modules of different levels to the game
 The replica of this board game is based on the original which belongs to a trademark owned by Pressman Toys; the origin may derive from a traditional English game called Bulls and Cows, played on paper: the "bulls" were equivalent to the black pieces, and the "cows" to the white ones.
 The toy museum in Denia (Alicante) exhibits this game under the commercial name of Conygan. From the Cayro toy factory and year of manufacture 1965.
 
-![Board Mastermind](imag_table_game_master_mind.png)
+![Alt text](imag_table_game_master_mind.png)
