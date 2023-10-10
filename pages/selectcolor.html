@@ -20,7 +20,7 @@
             <div class="shape-square3" id="palette3"></div>
             <div class="shape-square4" id="palette4"></div>
         </div>
-        <div class="palette-container">
+        <!-- <div class="palette-container">
             <div class="picker-palette">
                 <input type="color" class="color-select-style" name="" id="colorSelect1">
             </div>
@@ -33,7 +33,49 @@
             <div class="picker-palette">
                 <input type="color" class="color-select-style" name="" id="colorSelect4">
             </div>
+        </div> -->
+
+        <div class="palette-container">
+            <div class="picker-palette">
+                <select class="color-select-style" id="colorSelect1" onchange="colorChanged(this)">
+                    <option value="null" style="background-color: rgb(255, 255, 255);">Selecciona</option>
+                    <option value="red" style="background-color: red;"></option>
+                    <option value="green" style="background-color: green;"></option>
+                    <option value="yellow" style="background-color: yellow;"></option>
+                    <option value="pink" style="background-color: pink;"></option>
+                </select>
+                <select class="color-select-style" id="colorSelect2" onchange="colorChanged(this)">
+                    <option value="null" style="background-color: rgb(255, 255, 255);">Selecciona</option>
+                    <option value="red" style="background-color: red;"></option>
+                    <option value="green" style="background-color: green;"></option>
+                    <option value="yellow" style="background-color: yellow;"></option>
+                    <option value="pink" style="background-color: pink;"></option>
+                </select>
+                <select class="color-select-style" id="colorSelect3" onchange="colorChanged(this)">
+                    <option value="null" style="background-color: rgb(255, 255, 255);">Selecciona</option>
+                    <option value="red" style="background-color: red;"></option>
+                    <option value="green" style="background-color: green;"></option>
+                    <option value="yellow" style="background-color: yellow;"></option>
+                    <option value="pink" style="background-color: pink;"></option>
+                </select>
+                <select class="color-select-style" id="colorSelect4" onchange="colorChanged(this)">
+                    <option value="null" style="background-color: rgb(255, 255, 255);">Selecciona</option>
+                    <option value="red" style="background-color: red;"></option>
+                    <option value="green" style="background-color: green;"></option>
+                    <option value="yellow" style="background-color: yellow;"></option>
+                    <option value="pink" style="background-color: pink;"></option>
+                </select>
+            </div>
         </div>
+
+
+
+
+
+
+
+
+
         <div class="button-container">
             <button class="button-start" id="play">Start</button>
             <button class="button-reset" id="reset">Reset</button>

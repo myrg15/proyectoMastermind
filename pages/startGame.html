@@ -20,7 +20,7 @@
             <div class="shape-square3" id="palette3"></div>
             <div class="shape-square4" id="palette4"></div>
         </div>
- <div class="palette-container">
+<!--  <div class="palette-container">
             <div class="picker-palette">
                 <input type="color" class="color-select-style" name="" id="colorSelect1">
             </div>
@@ -32,22 +32,58 @@
             </div>
             <div class="picker-palette">
                 <input type="color" class="color-select-style" name="" id="colorSelect4">
+            </div> -->
+
+
+            <div style="display: flex; align-items: baseline;">
+                <div class="palette-container">
+                    <div class="picker-palette">
+                        <select class="color-select-style" id="colorSelect1">
+                            <option value="null" style="background-color: rgb(255, 255, 255);">Selecciona</option>
+                            <option value="red" style="background-color: red;"></option>
+                            <option value="green" style="background-color: green;"></option>
+                            <option value="yellow" style="background-color: yellow;"></option>
+                            <option value="pink" style="background-color: pink;"></option>
+                        </select>
+                        <select class="color-select-style" id="colorSelect2">
+                            <option value="null" style="background-color: rgb(255, 255, 255);">Selecciona</option>
+                            <option value="red" style="background-color: red;"></option>
+                            <option value="green" style="background-color: green;"></option>
+                            <option value="yellow" style="background-color: yellow;"></option>
+                            <option value="pink" style="background-color: pink;"></option>
+                        </select>
+                        <select class="color-select-style" id="colorSelect3">
+                            <option value="null" style="background-color: rgb(255, 255, 255);">Selecciona</option>
+                            <option value="red" style="background-color: red;"></option>
+                            <option value="green" style="background-color: green;"></option>
+                            <option value="yellow" style="background-color: yellow;"></option>
+                            <option value="pink" style="background-color: pink;"></option>
+                        </select>
+                        <select class="color-select-style" id="colorSelect4">
+                            <option value="null" style="background-color: rgb(255, 255, 255);">Selecciona</option>
+                            <option value="red" style="background-color: red;"></option>
+                            <option value="green" style="background-color: green;"></option>
+                            <option value="yellow" style="background-color: yellow;"></option>
+                            <option value="pink" style="background-color: pink;"></option>
+                        </select>
+                    </div>
+                </div>
+        
+            <div class="track" id="trackcombination"><!--pista combinación-->
+                        <div id="status0">
+                        </div>
+                        <div id="status1">
+                        </div>
+                        <div id="status2">
+                        </div>
+                        <div id="status3">
+                        </div>
+                        <!--<div class="button-check"></div>-->
+                            <button type="button" id="check">Check</button>
+                        
             </div>
-            <!--<div class="between-divisor">
-            </div>-->
-    <div class="track" id="trackcombination"><!--pista combinación-->
-                <div id="status0">
-                </div>
-                <div id="status1">
-                </div>
-                <div id="status2">
-                </div>
-                <div id="status3">
-                </div>
-                <!--<div class="button-check"></div>-->
-                    <button type="button" id="check">Check</button>
-                
-    </div>
+            </div>
+       
 </div>
        <!--<div class="button-container">
             <button type="button" id="newGame">New Game</button>
