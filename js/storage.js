@@ -31,7 +31,7 @@ function generateRandomCOlorsArray(numColors){
     return colors;
 }
 coloresAutogenerados = generateRandomCOlorsArray(4);
-/* console.log("LA MAQUINA A CREADO:" + coloresAutogenerados); */
+/* console.log("LA MAQUINA HA CREADO:" + coloresAutogenerados); */
 localStorage.setItem('coloresGeneradosMaquina', coloresAutogenerados);
 
 // PALETA DE COLORES
@@ -60,7 +60,7 @@ colorSelect4.addEventListener('input', () => {
         selectedColor.splice(3, 1, colorSelect4.value);
     }
 })
-//reset limpia lo input regresando color blanco
+//reset limpia input regresando color blanco
 reset.addEventListener('click', () => {
     selectedColor = [];
     palette1.style.backgroundColor = "#ffffff";
@@ -75,5 +75,5 @@ reset.addEventListener('click', () => {
 })
 play.addEventListener('click', () => {
     localStorage.setItem('selectedColor', selectedColor);
-    window.location.href = "/differentPages/startGame.html";
+    window.location.href = "/pages/startGame.html";
 })
