@@ -137,3 +137,12 @@ background: red;
     border-radius: 0.4em;
     width: 15em;
 }
+
+.color-select-style {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.red-option {
+    background-color: red;
+}
