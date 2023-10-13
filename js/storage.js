@@ -12,6 +12,31 @@ let selectedColor = [];
 const colores = ["red", "green", "yellow", "pink"];
 
 
+//otra funcion para guardar colores y redireccionar a la pagina de seleccionar 
+/*function gwtRandomHexColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random()*16)];     
+    }
+
+    return color;
+}*/
+
+
+/* function generateRandomCOlorsArray(numColors){
+    const colors = [];
+
+    for (let i = 0; i < numColors; i++) {
+       colors.push(gwtRandomHexColor());   
+    }
+
+    return colors;
+} */
+/* coloresAutogenerados = generateRandomCOlorsArray(4); */
+/* console.log("LA MAQUINA HA CREADO:" + coloresAutogenerados); */
+/* localStorage.setItem('coloresGeneradosMaquina', coloresAutogenerados); */
 
 // PALETA DE COLORES
 
