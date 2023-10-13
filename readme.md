@@ -1,5 +1,4 @@
-![Alt text](emojiPensando.png)
-
+![emoji pensando](imag/emojiPensando.png)
 ## Project 3  MASTERMIND
 
 ## Table of contents
@@ -22,25 +21,31 @@ which indicate red clues if you do not have your colours in the correct position
 Once the combination is finally found, the system will send a congratulatory message.
 
 ## Home
-![Home](home.JPG)
+![Home](imag/home.JPG)
 
 ## About
-![About](about.JPG)
+![About](imag/about.JPG)
 
 ## Login
-![Login](login.JPG)
+![Login](imag/login.JPG)
 
 ## Select colors
-![Selectcolors](selectcolors.JPG)
+![Select colors](imag/selectcolors.JPG)
 
 ## Start game
-![Startgame](stargame.JPG)
+![Start Game](imag/stargame.JPG)
+
+## Congratulations
+![Alt text](imag/congratulations.JPG)
 
 ## Improvements
-From this experience, I will include new modules of different levels to the game, and I will improve the already included level, punctually in the colours of the cards that give clues to the player for black and white, since to go with just time for the delivery of the project I did not make change of bottom of the screens the colour does not favour any element that contains black colour, among other improvements that I consider at the moment of the development.
+From this experience, I will include new level modules to the game, and I will improve the already included level, punctually in the colours of the tiles that give clues to the player by black and white, this replica uses the colours red and green.
+that give clues to the player by black and white, this replica uses the colours red and green due to the selected screen background which does not favour the use of the colours of the tiles of the original game. 
+of the original game.
 
 ### Licence and Copyright
 The replica of this board game is based on the original which belongs to a trademark owned by Pressman Toys; the origin may derive from a traditional English game called Bulls and Cows, played on paper: the "bulls" were equivalent to the black pieces, and the "cows" to the white ones.
 The toy museum in Denia (Alicante) exhibits this game under the commercial name of Conygan. From the Cayro toy factory and year of manufacture 1965.
 
-![Alt text](imag_table_game_master_mind.png)
+![Board](imag/imag_table_game_master_mind.png)
+

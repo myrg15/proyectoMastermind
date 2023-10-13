@@ -59,7 +59,7 @@ const estados = [status0, status1, status2, status3];
        
     if(status0.style.backgroundColor === "green" && status1.style.backgroundColor === "green" &&
         status2.style.backgroundColor === "green" && status3.style.backgroundColor === "green"){
-                windows.location.href = "/pages/winner.html";
+                windows.location.href = "pages/winner.html";
             } else {
             const divPadre = document.getElementsByClassName('row-select-colors');
                 /* CREACIÓN DE DIVS */
