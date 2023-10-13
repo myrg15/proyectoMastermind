@@ -203,3 +203,44 @@ body {
 #home:hover {
     background: #0056b3;
 }
+/*WINNER*/
+.title-winner{
+    margin-top: 0.5em;
+    font-size: 3.5em;
+    color: white;
+    text-align: center
+}
+.form-winner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 80px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 30px;
+    gap: 20px;
+}
+.congrat{
+    font-size: 40px;
+}
+
+#newGame{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#homeWinner{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
