@@ -8,7 +8,9 @@
 - [Login](#login)
 - [Select colors](#selectcolors)
 - [Start game](#startGame)
+- [Congratulations](#congratulations)
 - [Improvements](#improvements)
+- [Technology](#technology)
 - [Licence and Copyright](#licence-and-copyright)
 
 ### How does it work?
@@ -37,6 +39,9 @@ Once the combination is finally found, the system will send a congratulatory mes
 
 ## Congratulations
 ![Alt text](imag/congratulations.JPG)
+
+## Technology
+![Technology](imag/html_js_css.png)
 
 ## Improvements
 From this experience, I will include new level modules to the game, and I will improve the already included level, punctually in the colours of the tiles that give clues to the player by black and white, this replica uses the colours red and green.
