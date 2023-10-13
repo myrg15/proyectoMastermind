@@ -11,12 +11,8 @@ const play = document.getElementById('play')
 let selectedColor = [];
 const colores = ["red", "green", "yellow", "pink"];
 
-
-
 // PALETA DE COLORES
-
 colorSelect1.addEventListener('input', () => {
-   
     palette1.style.backgroundColor = colorSelect1.value;
     if (selectedColor[0] === undefined || selectedColor[0] === selectedColor[0]) {
         selectedColor.splice(0, 1, colorSelect1.value);
@@ -40,7 +36,7 @@ colorSelect4.addEventListener('input', () => {
         selectedColor.splice(3, 1, colorSelect4.value);
     }
 })
-//reset limpia input regresando color blanco
+//reset input white color
 reset.addEventListener('click', () => {
     selectedColor = [];
     palette1.style.backgroundColor = "#ffffff";
@@ -54,41 +50,29 @@ reset.addEventListener('click', () => {
     console.log(selectedColor);
 })
 play.addEventListener('click', () => {
-   /*  localStorage.setItem('selectedColor', selectedColor); */
-   /*  window.location.href = "/pages/startGame.html"; */
-   getSelectedColors();
+    getSelectedColors();
 })
-
 
 function colorChanged(selectElement) {
     const selectedColor = selectElement.value;
     selectElement.style.backgroundColor = selectedColor;
     console.log("Color seleccionado:", selectedColor);
-
 }
-
-/* NEW */
+/* USER */
 function getSelectedColors() {
-    /* USER */
     const colorSelect1 = document.getElementById("colorSelect1").value;
     const colorSelect2 = document.getElementById("colorSelect2").value;
     const colorSelect3 = document.getElementById("colorSelect3").value;
     const colorSelect4 = document.getElementById("colorSelect4").value;
-
     const selectedColors = [colorSelect1, colorSelect2, colorSelect3, colorSelect4];
-
     localStorage.setItem('selectedColors', selectedColors);
-    
 
-    /* MAQUINA */
-    const maquinaColors = [getRandomColors(),getRandomColors(),getRandomColors(),getRandomColors() ]
-
+    /* MACHINE */
+    const maquinaColors = [getRandomColors(), getRandomColors(), getRandomColors(), getRandomColors()]
     localStorage.setItem('maquinaColors', maquinaColors);
     window.location.href = "/pages/startGame.html";
 }
-
 function getRandomColors() {
-    
     const randomIndex = Math.floor(Math.random() * colores.length);
     return colores[randomIndex];
 }
