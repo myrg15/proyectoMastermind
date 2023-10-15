@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-const userColors = localStorage.getItem('selectedColors'); // string
-const selectedColors = userColors.split(","); // por cada coma ponemlo en una ubicacion de array [asda,asdaswd,asd,asd]
+const userColors = localStorage.getItem('selectedColors');
+const selectedColors = userColors.split(",");
 
 colorSelect1.value = selectedColors[0];
 colorSelect1.style.backgroundColor = selectedColors[0];
