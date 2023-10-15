@@ -127,7 +127,6 @@ body {
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
 }
-
 .separador-home {
     background: transparent;
     font-size: 1.5em;
@@ -144,7 +143,6 @@ body {
 .input-player {
     margin-top: 1.5em;
     font-size: 1.5em;
-    /*background:white;*/
     border-radius: 0.2em;
     width: 50em;
     color: white;
@@ -234,6 +232,8 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+
 }
 #homeWinner{
     background-color: white;
@@ -242,5 +242,6 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
