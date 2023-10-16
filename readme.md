@@ -54,6 +54,6 @@ The toy museum in Denia (Alicante) exhibits this game under the commercial name 
 
 ![Board](imag/imag_table_game_master_mind.png)
 
-[you can see the project here](https://myrg15.github.io/startProyectMasterMind.github.io/)
+[you can see the project here](https://myrg15.github.io/proyectoMastermind/)
 
 
