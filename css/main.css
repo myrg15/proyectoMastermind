@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('/imag/fondos-abstractos-hd-4k.webp');
+    background-image: url('../imag/fondos-abstractos-hd-4k.webp');
     font-family: 'Gloria Hallelujah', cursive;
     background-size: cover;
 }

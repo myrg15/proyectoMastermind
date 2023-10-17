@@ -1,127 +1,126 @@
-document.addEventListener("DOMContentLoaded", function() {
-const userColors = localStorage.getItem('selectedColors');
-const selectedColors = userColors.split(",");
+document.addEventListener("DOMContentLoaded", function () {
+    const userColors = localStorage.getItem('selectedColors');
+    const selectedColors = userColors.split(",");
 
-colorSelect1.value = selectedColors[0];
-colorSelect1.style.backgroundColor = selectedColors[0];
-colorSelect2.value = selectedColors[1];
-colorSelect2.style.backgroundColor = selectedColors[1];
-colorSelect3.value = selectedColors[2];
-colorSelect3.style.backgroundColor = selectedColors[2];
-colorSelect4.value = selectedColors[3];
-colorSelect4.style.backgroundColor = selectedColors[3];
+    colorSelect1.value = selectedColors[0];
+    colorSelect1.style.backgroundColor = selectedColors[0];
+    colorSelect2.value = selectedColors[1];
+    colorSelect2.style.backgroundColor = selectedColors[1];
+    colorSelect3.value = selectedColors[2];
+    colorSelect3.style.backgroundColor = selectedColors[2];
+    colorSelect4.value = selectedColors[3];
+    colorSelect4.style.backgroundColor = selectedColors[3];
 
-const status0 = document.getElementById("status0");
-const status1 = document.getElementById("status1");
-const status2 = document.getElementById("status2");
-const status3 = document.getElementById("status3");
-const maquinaColors = localStorage.getItem('maquinaColors');
-const selectedMaquinaColors = maquinaColors.split(",");
+    const status0 = document.getElementById("status0");
+    const status1 = document.getElementById("status1");
+    const status2 = document.getElementById("status2");
+    const status3 = document.getElementById("status3");
+    const maquinaColors = localStorage.getItem('maquinaColors'); //asigno los colores de la maquina en formato String  
+    const selectedMaquinaColors = maquinaColors.split(",");
 
-    if(selectedColors[0] === selectedMaquinaColors[0]){
+    if (selectedColors[0] === selectedMaquinaColors[0]) {
         status0.style.backgroundColor = "green"
     } else {
         status0.style.backgroundColor = "red"
     }
-    if(selectedColors[1] === selectedMaquinaColors[1]){
+    if (selectedColors[1] === selectedMaquinaColors[1]) {
         status1.style.backgroundColor = "green"
     } else {
         status1.style.backgroundColor = "red"
     }
-    if(selectedColors[2] === selectedMaquinaColors[2]){
+    if (selectedColors[2] === selectedMaquinaColors[2]) {
         status2.style.backgroundColor = "green"
     } else {
         status2.style.backgroundColor = "red"
     }
-    if(selectedColors[3] === selectedMaquinaColors[3]){
+    if (selectedColors[3] === selectedMaquinaColors[3]) {
         status3.style.backgroundColor = "green"
     } else {
         status3.style.backgroundColor = "red"
     }
+    const check = document.getElementById("check");// llamo al div check con el metodo getelementbyid
+    check.addEventListener("click", (event) => { // asigno el evento de esccucha 
+        event.preventDefault();//evito o preveeo que algun boton reinicie la pagina, o cualquier evento 
 
-const check = document.getElementById("check");
-    check.addEventListener("click", (event) =>{ 
-        event.preventDefault(); 
+        /* COMPROBACIÓN DE COLORES Y PUESTA EN EL ESTADO */
+        const machineColors = localStorage.getItem('maquinaColors');//asigno los colores de la maquina en forma de string
+        const coloresAutogenerados = machineColors.split(",");// con el método . split ubico esos String en forma de elementos dentro del array machineColors
+        const colorAComprobar = [colorSelect1.value, colorSelect2.value, colorSelect3.value, colorSelect4.value];
+        const estados = [status0, status1, status2, status3];
 
-    /* COMPROBACIÓN DE COLORES Y PUESTA EN EL ESTADO */
-const machineColors = localStorage.getItem('maquinaColors');
-const coloresAutogenerados = machineColors.split(",");  
-const colorAComprobar = [colorSelect1.value, colorSelect2.value, colorSelect3.value, colorSelect4.value];
-const estados = [status0, status1, status2, status3];  
-
-    for (let i = 0; i < colorAComprobar.length; i++) {       
-        if(coloresAutogenerados[i] === colorAComprobar[i]){
-            estados[i].style.backgroundColor = "green"
-        } else {
-            estados[i].style.backgroundColor = "red"
-        }
-    }
-       
-    if(status0.style.backgroundColor === "green" && status1.style.backgroundColor === "green" &&
-        status2.style.backgroundColor === "green" && status3.style.backgroundColor === "green"){
-                window.location.href = "winner.html";
+        for (let i = 0; i < colorAComprobar.length; i++) {
+            if (coloresAutogenerados[i] === colorAComprobar[i]) {
+                estados[i].style.backgroundColor = "green"
             } else {
+                estados[i].style.backgroundColor = "red"
+            }
+        }
+
+        if (status0.style.backgroundColor === "green" && status1.style.backgroundColor === "green" &&
+            status2.style.backgroundColor === "green" && status3.style.backgroundColor === "green") {
+            window.location.href = "winner.html";
+        } else {
             const divPadre = document.getElementsByClassName('row-select-colors');
-                /* CREACIÓN DE DIVS */
+            /* CREACIÓN DE DIVS */
             const square = createDivWithClassAndId("square");
             const palette1 = createDivWithClassAndId("shape-square1", {
                 backgroundColor: colorSelect1.value
-                }, "palette1");
+            }, "palette1");
             const palette2 = createDivWithClassAndId("shape-square1", {
                 backgroundColor: colorSelect2.value
-                }, "palette2");
+            }, "palette2");
             const palette3 = createDivWithClassAndId("shape-square1", {
                 backgroundColor: colorSelect3.value
-                }, "palette3");
+            }, "palette3");
             const palette4 = createDivWithClassAndId("shape-square1", {
                 backgroundColor: colorSelect4.value
-                }, "palette4");
-                square.appendChild(palette1);
-                square.appendChild(palette2);
-                square.appendChild(palette3);
-                square.appendChild(palette4);
+            }, "palette4");
+            square.appendChild(palette1);
+            square.appendChild(palette2);
+            square.appendChild(palette3);
+            square.appendChild(palette4);
             const track = createDivWithClassAndId("track", {
                 marginLeft: "230px"
-                }, "trackcombination");
+            }, "trackcombination");
             const divStatus0 = createDivWithClassAndId("", {
                 backgroundColor: status0.style.backgroundColor
-                }, "status0");
+            }, "status0");
             const divStatus1 = createDivWithClassAndId("", {
                 backgroundColor: status1.style.backgroundColor
-                }, "status1");
+            }, "status1");
             const divStatus2 = createDivWithClassAndId("", {
                 backgroundColor: status2.style.backgroundColor
-                }, "status2");
+            }, "status2");
             const divStatus3 = createDivWithClassAndId("", {
                 backgroundColor: status3.style.backgroundColor
-                }, "status3");    
-                track.appendChild(divStatus0);
-                track.appendChild(divStatus1);
-                track.appendChild(divStatus2);
-                track.appendChild(divStatus3);
-                // https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement
-                divPadre[0].insertAdjacentElement('afterend',track);
-                divPadre[0].insertAdjacentElement('afterend',square);           
+            }, "status3");
+            track.appendChild(divStatus0);
+            track.appendChild(divStatus1);
+            track.appendChild(divStatus2);
+            track.appendChild(divStatus3);
+            // https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement
+            divPadre[0].insertAdjacentElement('afterend', track);
+            divPadre[0].insertAdjacentElement('afterend', square);
 
-                colorSelect1.value = null;
-                colorSelect1.style.backgroundColor = "white";
-                colorSelect2.value = null;
-                colorSelect2.style.backgroundColor = "white";
-                colorSelect3.value = null;
-                colorSelect3.style.backgroundColor = "white";
-                colorSelect4.value = null;
-                colorSelect4.style.backgroundColor = "white";
-                status0.style.backgroundColor = "white";
-                status1.style.backgroundColor = "white";
-                status2.style.backgroundColor = "white";
-                status3.style.backgroundColor = "white";
-            }
+            colorSelect1.value = null;
+            colorSelect1.style.backgroundColor = "white";
+            colorSelect2.value = null;
+            colorSelect2.style.backgroundColor = "white";
+            colorSelect3.value = null;
+            colorSelect3.style.backgroundColor = "white";
+            colorSelect4.value = null;
+            colorSelect4.style.backgroundColor = "white";
+            status0.style.backgroundColor = "white";
+            status1.style.backgroundColor = "white";
+            status2.style.backgroundColor = "white";
+            status3.style.backgroundColor = "white";
+        }
     });
 });
-function createDivWithClassAndId(className, styles = {}, id = null) { 
+function createDivWithClassAndId(className, styles = {}, id = null) {
     const div = document.createElement('div');
     div.className = className;
-    if(id){
+    if (id) {
         div.id = id;
     }
     Object.keys(styles).forEach(key => {

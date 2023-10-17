@@ -49,6 +49,7 @@ reset.addEventListener('click', () => {
     colorSelect4.value = "#ffffff";
     console.log(selectedColor);
 })
+
 play.addEventListener('click', () => {
     getSelectedColors();
 })
